@@ -67,21 +67,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const questions = document.querySelectorAll('.question');
-    
+
     questions.forEach(question => {
         question.addEventListener('click', function() {
-            // Close all open answers
-            document.querySelectorAll('.answer').forEach(answer => {
-                answer.style.display = 'none';
-            });
-
-            // Open the clicked answer if it was previously closed
+            // Toggle the visibility of the clicked answer
             const answer = this.nextElementSibling;
-            if (answer.style.display === 'none' || answer.style.display === '') {
-                answer.style.display = 'block';
-            } else {
+
+            // If the clicked question is already active, hide it
+            if (answer.style.display === 'block') {
                 answer.style.display = 'none';
+                this.classList.remove('active');
+            } else {
+                // Close all answers and remove the active class from all questions
+                questions.forEach(q => {
+                    q.nextElementSibling.style.display = 'none';
+                    q.classList.remove('active');
+                });
+
+                // Open the clicked answer and add the active class
+                answer.style.display = 'block';
+                this.classList.add('active');
             }
         });
     });
 });
+
