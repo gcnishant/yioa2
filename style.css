@@ -644,7 +644,7 @@ footer a:hover {
         display:flex;
         /*border:1px solid black;*/
         width: 15vw;
-        height: 50vh;
+        height: auto;
     
     }
 
@@ -664,7 +664,7 @@ footer a:hover {
         display:flex;
         /*border:1px solid black;*/
         width: 15vw;
-        height: 50vh;
+        height: auto;
     
     }
 
