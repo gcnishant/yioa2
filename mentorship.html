@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./Exampleimages/updated-tab.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Program</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="app.js"></script>
+
+</head>
+
+
+<body>
+
+    <header id="fixed-header">
+        <a href="./">
+        <img class ="header-logo"src="./Exampleimages/header-yioa.png">
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="./#mission-id">Our Mission</a></li>
+                <li><a href="./#who-we-are-id">Who We Are</a></li>
+                <li><a href="./#mentorship-program-id">Mentorship Program</a></li>
+                <li><a href="./#contact-us-id">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<main id ="mentorship-program-id">
+    <section class="mentorship-section" >
+
+    <h1>MENTORSHIP FORM</h1>
+
+    <p>Thank you for your interest in seeking guidance from YIOA! Please fill out the form below. We request that you submit a 1-2 
+        paragraph message that introduces yourself (Your age, your background, goals, current academic status, etc.). This allows us to better understand your needs. </p> 
+    <form action="https://api.web3forms.com/submit" id="mentorship-form" class="form-container" method="POST">
+        <input type="hidden" name="access_key" value="1c65048f-fcba-4ab6-bf49-71bc94ef786a">
+            
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="John" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Smith" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" id="email" placeholder="6Eg6L@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="verify-email">Verify Email</label>
+                <input id="verify-email" type="email" name="verify-email" placeholder="6Eg6L@example.com" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="school-grade">Academic Status</label>
+                <select id="school-grade" name="school-grade" required>
+                    <option value="Default"></option>
+                    <option value="Elementary">Elementary School (K-5)</option>
+                    <option value="Middle">Middle School (6-8)</option>
+                    <option value="High">High School (9-12)</option>
+                    <option value="College-Under">College/University (Undergraduate)</option>
+                    <option value="College-Grad">College/University (Graduate)</option>
+                    <option value="Not-Enrolled">Currently Not Enrolled</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="contact-reason">Contact Reason</label>
+                <select id="contact-reason" name="contact-reason" required>
+                    <option value="Mentorship Program">Mentorship Program</option>
+                </select>
+            </div>
+    
+            <div class="form-message">
+                <label for="message">Message</label>
+                <textarea id="message"name="message" placeholder="1-2 Paragraph Introduction."></textarea>
+            </div>
+            <div class="button-container">
+                <button class="contact-button" type="submit" value="Register">Submit</button>
+            </div>
+        </form>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class ="socialicons">
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+    
+    </div>
+    
+    <p>&copy; 2024 Young Immigrants of America. All rights reserved.</p>
+    <p>
+        <a href="./FAQ">FAQ</a> |
+        <a href="credits.html">Credits</a>
+    </p>
+
+</footer>
+
+
+</body>
+</html>
