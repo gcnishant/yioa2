@@ -198,6 +198,7 @@ nav ul li a:hover {
     /*border:1px solid black;*/
     width: 25vw;
     height: auto;
+    background-color:goldenrod;
 
 }
 
@@ -226,6 +227,7 @@ nav ul li a:hover {
     /*border:1px solid black;*/
     width: 25vw;
     height: auto;
+    background-color:#733635;
 }
 
 
@@ -503,10 +505,10 @@ footer a:hover {
 }
 
 /* HIDE SOCIAL MEDIA UNTIL ALL LINKS RECIEVED */
-.socialicons {
+/*.socialicons {
     display: none;
 }
-
+*/
 
 .socialicons a {
     text-decoration: none;
