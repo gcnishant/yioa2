@@ -92,31 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const leftDiv = document.querySelector('.left-empty-div');
-const rightDiv = document.querySelector('.right-empty-div');
-
-
-leftDiv.addEventListener('mouseenter', () => {
-    leftDiv.style.backgroundColor = "#733635";
-    rightDiv.style.backgroundColor = "goldenrod";
-});
-
-leftDiv.addEventListener('mouseleave', () => {
-    leftDiv.style.backgroundColor = "goldenrod";
-    rightDiv.style.backgroundColor = "#733635";
-});
-
-rightDiv.addEventListener('mouseenter', () => {
-    rightDiv.style.backgroundColor = "goldenrod";
-    leftDiv.style.backgroundColor = "#733635";
-
-});
-
-rightDiv.addEventListener('mouseleave', () => {
-    rightDiv.style.backgroundColor = "#733635";
-    leftDiv.style.backgroundColor = "goldenrod";
-});
-
 const contactReasonSelect = document.getElementById('contact-reason');
 const otherReasonContainer = document.getElementById('other-reason-container');
 
