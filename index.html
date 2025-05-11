@@ -183,7 +183,7 @@
     
     </p>
     <form action="https://api.web3forms.com/submit" class="form-container" method="POST">
-    <input type="hidden" name="access_key" value="1c65048f-fcba-4ab6-bf49-71bc94ef786a">
+    <input type="hidden" name="access_key"  value="1c65048f-fcba-4ab6-bf49-71bc94ef786a">
         
         <div class="form-group">
             <label for="first-name">First Name</label>
@@ -195,11 +195,11 @@
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input id="email" type="email" name="email" id="email" placeholder="6Eg6L@example.com" required>
+            <input id="email" type="email" name="email" id="email" placeholder="email@example.com" required>
         </div>
         <div class="form-group">
             <label for="verify-email">Verify Email</label>
-            <input id="verify-email" type="email" name="verify-email" placeholder="6Eg6L@example.com" required>
+            <input id="verify-email" type="email" name="verify-email" placeholder="email@example.com" required>
         </div>
 
         <div class="form-group">
@@ -225,6 +225,12 @@
             <label for="message">Message</label>
             <textarea id="message"name="message" placeholder="Message"></textarea>
         </div>
+
+        <div class="form-check">
+            <label for="areYouHuman" style="display:none;">Are you human?</label>
+            <input type="text" id="areYouHuman" name="areYouHuman" class="hidden" style="display:none;">
+        </div>
+
         <div class="button-container">
             <button class="contact-button" type="submit" value="Register">Submit</button>
         </div>

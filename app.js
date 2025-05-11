@@ -102,3 +102,12 @@ contactReasonSelect.addEventListener('change', () => {
         otherReasonContainer.style.display = 'none';
     }
 });
+
+document.querySelector(".form-container").addEventListener("submit", function(e) {
+    const humanField = this.querySelector("[name='areYouHuman']");
+    if (humanField.value) { // If the field has any value
+      e.preventDefault(); // Stop the form from submitting
+      alert("Error, please try again."); // Display error message
+    }
+});
+  
