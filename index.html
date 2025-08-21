@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="timeline-config.js"></script>
     <script defer src="app.js"></script>
 
 </head>
@@ -28,6 +29,7 @@
             <ul>
                 <li><a href="./#mission-id">Our Mission</a></li>
                 <li><a href="./#who-we-are-id">Who We Are</a></li>
+                <li><a href="./#timeline-id">Our Journey</a></li>
                 <li><a href="./#mentorship-program-id">Mentorship Program</a></li>
                 <li><a href="./#contact-us-id">Contact Us</a></li>
             </ul>
@@ -127,6 +129,38 @@
     </div>
 
 
+</section>
+
+<!-- Timeline Section -->
+<section id="timeline-id" class="timeline-section">
+    <div class="timeline-container">
+        <h2>Our Journey</h2>
+        <p class="timeline-subtitle">Key milestones in our mission to support young immigrants</p>
+        
+        <div class="timeline-wrapper">
+            <button class="timeline-nav-btn prev-btn" aria-label="Previous event">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="timeline-viewport">
+                <div class="timeline-track">
+                    <!-- Timeline events will be generated dynamically from timeline-config.js -->
+                </div>
+            </div>
+            
+            <button class="timeline-nav-btn next-btn" aria-label="Next event">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <div class="timeline-dots">
+            <!-- Timeline dots will be generated dynamically from timeline-config.js -->
+        </div>
+        
+        <div class="timeline-details">
+            <!-- Dynamic content will be loaded here based on selected event -->
+        </div>
+    </div>
 </section>
 
 <div class="gap"></div>
