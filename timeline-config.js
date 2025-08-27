@@ -12,12 +12,12 @@ const timelineEvents = [
             description: "LUMA's Founder and current President, Rabin Bhandari, initially started this organization going under the title Young Immigrants of America, along with Board Members Saad Bentahar, Camila Chi, Anushka Dutta, Prisha Guruwacharya, and Arvin Singh. They had dreams of providing mentorship to enable young immigrants to thrive academically, personally, and socially; taking matters into their own hands by starting YIOA.",
             images: [
                 {
-                    src: "./Exampleimages/UpdatedYIOA-HERO.png",
+                    src: "./Exampleimages/YIOA LOGO DESIGN-svg.png",
                     caption: "YIOA Logo Design"
                 },
                 {
-                    src: "./Exampleimages/UpdatedYIOAPaper.png",
-                    caption: "YIOA Mission Paper "
+                    src: "./Exampleimages/YIOA LOGO DESIGN.svg",
+                    caption: "YIOA Logo Design"
                 }
             ]
         }
@@ -72,12 +72,12 @@ const timelineEvents = [
             description: "YIOA's first interactive meeting came November 14th, collaborating with Eastern Technical High School's UNICEF United to put together goodie bags for the bright students in the ESOL program at Gunpowder Elementary to reinforce the importance of education and curiosity.",
             images: [
                 {
-                    src: "./RoughDraftImages/unicef1.png",
-                    caption: "YIOA & Unicef"
+                    src: "./Exampleimages/diversity.png",
+                    caption: "Cultural Exchange"
                 },
                 {
-                    src: "./RoughDraftImages/unicef2.png",
-                    caption: "Collaboration at Gunpowder Elementary"
+                    src: "./Exampleimages/comments.png",
+                    caption: "Community Service"
                 }
             ]
         }
@@ -96,8 +96,8 @@ const timelineEvents = [
                     caption: "BCPS Budget Meeting"
                 },
                 {
-                    src: "./RoughDraftImages/bcps2.png",
-                    caption: "Map with Flags of Countries"
+                    src: "./Exampleimages/data-science.png",
+                    caption: "Educational Advocacy"
                 }
             ]
         }
@@ -125,10 +125,10 @@ const timelineEvents = [
     {
         id: 6,
         date: "April 2025",
-        title: "Villa Cresta CuCo",
+        title: "Vila Cresta CuCo",
         description: "On April 8th of 2025, YIOA attended Villa Cresta Elementary School's Cultural Coalescence event, supporting their PTA in encouraging their young students to explore, embrace, and enjoy cultures different than their own.",
         details: {
-            title: "Villa Cresta CuCo",
+            title: "Vila Cresta CuCo",
             description: "On April 8th of 2025, YIOA attended Villa Cresta Elementary School's Cultural Coalescence event, supporting their PTA in encouraging their young students to explore, embrace, and enjoy cultures different than their own.",
             images: [
                 {
@@ -136,8 +136,8 @@ const timelineEvents = [
                     caption: "Cultural Coalescence Event"
                 },
                 {
-                    src: "./RoughDraftImages/villa2.png",
-                    caption: "Villa Cresta Elementary"
+                    src: "./Exampleimages/diversity.png",
+                    caption: "Cultural Celebration"
                 }
             ]
         }

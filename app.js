@@ -211,11 +211,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const active = timelineEvents[currentIndex];
         if (!active) return;
         
-        // Check if we're on mobile or tablet (vertical layout)
-        const isMobileOrTablet = window.innerWidth <= 1024;
+        // Check if we're on mobile (vertical layout)
+        const isMobile = window.innerWidth <= 768;
         
-        if (isMobileOrTablet) {
-            // Mobile/Tablet: vertical scrolling
+        if (isMobile) {
+            // Mobile: vertical scrolling
             updateVerticalTimeline();
         } else {
             // Desktop: horizontal scrolling
