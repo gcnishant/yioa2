@@ -408,6 +408,15 @@ nav ul li a:hover {
     transform: none;
 }
 
+/* Arrow visibility for different screen sizes */
+.timeline-nav-btn .mobile-arrow {
+    display: none;
+}
+
+.timeline-nav-btn .desktop-arrow {
+    display: block;
+}
+
 .timeline-track {
     display: flex;
     transition: transform 0.5s ease;
@@ -601,6 +610,8 @@ nav ul li a:hover {
         flex-direction: column;
         gap: 1rem;
         max-width: 100%;
+        position: relative;
+        align-items: center;
     }
     
     .timeline-nav-btn {
@@ -620,6 +631,35 @@ nav ul li a:hover {
     
     .timeline-track {
         margin: 0 0.5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .timeline-viewport {
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+        overflow: hidden;
+        order: 2;
+    }
+    
+    /* Show mobile arrows and hide desktop arrows on small screens */
+    .timeline-nav-btn .desktop-arrow {
+        display: none;
+    }
+    
+    .timeline-nav-btn .mobile-arrow {
+        display: block;
+    }
+    
+    /* Position up arrow above the timeline */
+    .timeline-nav-btn.prev-btn {
+        order: 1;
+    }
+    
+    /* Position down arrow below the timeline */
+    .timeline-nav-btn.next-btn {
+        order: 3;
     }
 }
 

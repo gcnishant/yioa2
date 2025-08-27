@@ -211,6 +211,40 @@ document.addEventListener('DOMContentLoaded', function() {
         const active = timelineEvents[currentIndex];
         if (!active) return;
         
+        // Check if we're on mobile (vertical layout)
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile) {
+            // Mobile: vertical scrolling
+            updateVerticalTimeline();
+        } else {
+            // Desktop: horizontal scrolling
+            updateHorizontalTimeline();
+        }
+    }
+    
+    // Vertical timeline update for mobile
+    function updateVerticalTimeline() {
+        const active = timelineEvents[currentIndex];
+        if (!active) return;
+        
+        const eventHeight = 280; // Height of each event
+        const eventGap = 16; // Gap between events (1rem = 16px)
+        const viewportHeight = 300; // Height from CSS
+        
+        // Calculate vertical position to center the active event
+        const activeTop = currentIndex * (eventHeight + eventGap);
+        const viewportCenter = viewportHeight / 2;
+        const translateY = -(activeTop - viewportCenter + eventHeight / 2);
+        
+        timelineTrack.style.transform = `translateY(${translateY}px)`;
+    }
+    
+    // Horizontal timeline update for desktop
+    function updateHorizontalTimeline() {
+        const active = timelineEvents[currentIndex];
+        if (!active) return;
+        
         // Calculate the viewport width (showing 3 events at a time)
         const eventWidth = 300; // Width of each event
         const eventMargin = 32; // Total margin (16px on each side)
